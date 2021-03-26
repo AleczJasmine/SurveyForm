@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+  <!-- OTHER NEEDED INFO LINKS-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet" type="text/css">
+  <!-- MAIN CSS FOR THE PROJECT-->
+<style>
+body {
+  background:url(https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YmFrZXJ5fGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Chivo', sans-serif;
+ font-weight: 300;
+ color: white;
+}
+h1{
+ font-family: 'Playfair Display', serif;
+ font-weight: 900;
+ font-style: italic;
+ font-size: 40px;
+ color:white;
+ display: inline-block;
+ background-color: black;
+}
+
+
+#survey-form {
+  background-color: #A5402D;
+  width: 50%;
+  padding-top: 40px;
+  margin: auto;
+ }
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+.form-control {
+  display: block;
+  width: 95%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #fff;
+ 
+}
+
+#dropdown {
+  height: 30px;
+   width: 95%;
+}
+#logo{
+width:200px;
+height:200px; 
+margin-right: auto;
+margin-left: auto;
+display: block;
+border:1px solid #81c784;
+ box-shadow: 0 4px 5px 0 #FFC07F, 0 3px 20px 0 #FFC07F;
+ border-radius: 100%;
+}
+.smalldesc{
+	font-size: 20px;
+	 color:white;
+ display: inline-block;
+ background-color: black;
+ padding: 0;
+}
+
+[type=submit] {
+  width: 120px;
+  height: 70px;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+    font-size: 25px;
+  color: white;
+  border-radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+.input-textarea {
+  min-height: 120px;
+  width: 90%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+
+</style>
+<!-- BODY ATTRIBUTES FOR FORM -->
+
+<body>
+<img src ="https://i.imgur.com/uZcEDlr.png" alt ="Logo for shop" id="logo" />
+<div style="text-align: center">
+<h1 align='center' id='title'>Denateo's Shop Survey Form</h1>
+<br>
+  <p id="description" align='center' class="smalldesc">Please take time to answer this survey for improvements for the shop! </p>
+</div>
+
+<form  id="survey-form" >
+  <div class="form-group">
+      <label id="name-label" for="name">NAME : </label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">E-MAIL : </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+     </div>
+     <div class="form-group">
+      <label id="number-label">AGE : (optional) </label>
+      <input
+        type='number'
+        id='number'
+        class="form-control"
+        placeholder="Enter your age"
+        min="7" 
+        max="99"
+      />
+     </div>
+    <div class="form-group">
+      <p>HOW DID YOU LEARN ABOUT US?</p>
+      <select id="dropdown" class="form-control" required>
+        <option disabled selected value>Select option</option>
+        <option value="friend">Friend</option>
+        <option value="recom">Recommendation</option>
+        <option value="socmed">Social Media Platform</option>
+        <option value="firsthand">First-hand experience (e.g walk-in, passed by, etc)</option>
+        <option value="others">Others</option>
+      </select>
+    </div>
+  <div class="form-group">
+      <p>WOULD YOU RECOMMEND DENATEO'S BAKESHOP TO A FRIEND?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />
+        Definitely
+        </label >
+      <label>
+      	<br>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+      <br>
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+    <div class="form-group">
+      <p>
+        WHAT FOODS/GOODS DO YOU LIKE BEST ABOUT OUR SHOP?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Cookies</label
+      >
+      <br>
+      <label>
+        <input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Pancit Bilaos</label
+      >
+      <br>
+      <label
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Pasta Bilaos</label
+      >
+      <br>
+      <label
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Cupcakes</label
+      >
+      <br>
+      <label
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Homemade Pizza</label
+      >
+      <br>
+      <label
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Appetizers on-the-go</label
+      >
+      <br>
+      <label
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Merienda Bilao (mixed)</label
+      >
+      <br>
+      <label
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Baked goods (e.g Lasagna, baked mac, etc)</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>LEAVE US A FEEDBACK!</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Place your feedbacks here"
+      ></textarea>
+    </div>
+
+  <input type='submit' id='submit'>
+ 
+     
+</form>
+  
+  
+</body>
+</html>
